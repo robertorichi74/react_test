@@ -1,0 +1,37 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+* {
+  font-family: "Roboto";
+  font-size: 16px;
+}
+
+span {
+  color: rgb(0, 0, 0);
+}
+
+.App {
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+}
+
+.root-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 50px;
+}
+
+.calculator-container {
+  margin-top: 70px;
+  width: 70%;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.result-container {
+  padding-top: 30px;
+  margin-left: 20px;
+  padding-left: 10px;
+  border-left: 1px;
+  border-left-style: solid;
+  border-color: lightgrey;
+  font-family: Arial, Helvetica, sans-serif;
+}

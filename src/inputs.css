@@ -1,0 +1,131 @@
+.loading-bar {
+  position: absolute;
+  background-color: white;
+}
+
+.result {
+  padding: 10px;
+}
+
+.result .title {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.combined {
+  position: relative;
+}
+
+.error-message {
+  display: block;
+  position: absolute;
+  right: 0px;
+  top: -98px;
+  width: 200px;
+  text-align: center;
+  padding: 5px;
+  background-color: #bada55;
+  z-index: 10000;
+}
+
+.error-message:after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  margin-left: -0.5em;
+  bottom: -1.4em;
+  left: 50%;
+  box-sizing: border-box;
+
+  border: 0.7em solid rgb(188, 195, 203);
+  border-color: transparent transparent #bada55 #bada55;
+
+  transform-origin: 0 0;
+  transform: rotate(-45deg);
+
+  z-index: 9000;
+}
+
+.error-container-enter {
+  opacity: 0;
+}
+.error-container-enter-active {
+  opacity: 1;
+  transition: opacity 400ms;
+}
+.error-containere-exit {
+  opacity: 1;
+}
+.error-container-exit-active {
+  opacity: 0;
+  transition: opacity 400ms;
+}
+
+.numberInput {
+  display: block;
+  float: right;
+  text-align: right;
+}
+
+.labels {
+  padding-top: 10px;
+  display: flex;
+  justify-content: space-between;
+  color: gray;
+}
+
+.insurance {
+  margin-top: 20px;
+  font-weight: bold;
+}
+
+input[type="text"] {
+  background: url(search-white.png) no-repeat 10px 6px #fcfcfc;
+  border: 1px solid #d1d1d1;
+  color: black;
+  width: 80px;
+  padding: 6px 15px 6px 35px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 5px;
+  text-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15) inset;
+  -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15) inset;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15) inset;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: right;
+}
+
+.slider {
+  -webkit-appearance: none;
+  background-color: lightgray;
+  border-radius: 4px;
+  margin: 0 auto;
+  outline: 0;
+  height: 3px;
+}
+
+input[type="range"] {
+  width: 100%;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: 0.3s ease-in;
+  background-color: #bada55;
+}
+​ input[type="range"]::-webkit-slider-thumb:hover {
+  background-color: white;
+}
+
+input[type="range"]::-webkit-slider-thumb:active {
+  transform: scale(1.5);
+}
